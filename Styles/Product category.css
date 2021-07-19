@@ -1,0 +1,36 @@
+#category{
+		background-color:white;
+		width:60%;
+		
+		height:665px;
+		margin-top:10px;
+		float:left;
+		padding-top:5px;
+	
+		border-radius:10px;
+		padding-bottom:37px;
+	}
+	h1#productTXT{
+	color:black;
+	}
+	.categoryimg{
+
+	height:34%;
+	width:26%;
+	margin-top:4%;
+	margin-left:5%;
+	margin-bottom:4%;
+	float:left;
+	}
+	.caption{
+	color:black;
+	}
+	.thumbnail:hover{
+	position:relative;
+	left:3px;
+	width:90%;
+	height:90%;
+	display:block;
+	z-index:999;
+	
+	}

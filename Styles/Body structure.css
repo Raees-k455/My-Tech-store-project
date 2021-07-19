@@ -1,0 +1,9 @@
+body{
+		font-family:Verdana, sans-serif, calibri;
+		text-align:center;
+		background-color:#efefef;
+		margin-left:9%;
+
+	}
+	
+	img.imagefloat{float:left;}
