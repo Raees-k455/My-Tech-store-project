@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Cart - TechStore</title>
+    <link rel="stylesheet" href="Styles/Styles.css">
+</head>
+<body>
+    <header>
+        <!-- Assuming your navbar structure is consistent across pages -->
+        <div id="navbar">
+            <a href="index.html" class="logo-link"> 
+                <img src="Images/my logo.png" alt="Ray's Tech Store Logo" class="nav-logo">
+            </a>
+            <ul>
+              <li><a href="Index.html">Home</a></li>
+               <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="page-container">
+        <h1 class="cart-title">Your Shopping Cart</h1>
+
+        <div class="cart-layout-grid">
+            <!-- 1. Cart Items Listing -->
+            <section id="cartItemsContainer" class="cart-items-list">
+                <!-- Cart items will be dynamically inserted here by JavaScript -->
+                <p id="loadingMessage">|Feature coming soon...|</p>
+                <!-- If cart is empty, this message will be shown -->
+                <p id="emptyCartMessage" style="display: none;">Your cart is empty. <a href="shop.html">Start shopping!</a></p>
+            </section>
+
+            <!-- 2. Cart Summary (Sidebar) -->
+            <aside id="cartSummary" class="cart-summary-box">
+                <h2>Order Summary</h2>
+                <div class="summary-line">
+                    <span>Subtotal:</span>
+                    <span id="subtotalAmount">R0.00</span>
+                </div>
+                <div class="summary-line">
+                    <span>Shipping (Flat Rate):</span>
+                    <span id="shippingCost">R150.00</span>
+                </div>
+                <hr>
+                <div class="summary-line total-line">
+                    <strong>Total:</strong>
+                    <strong id="totalAmount">R0.00</strong>
+                </div>
+                <button id="checkoutButton" class="checkout-btn">Proceed to Checkout</button>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Assuming you have a footer -->
+    <footer>
+        <p>&copy; 2024 TechStore. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

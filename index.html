@@ -1,186 +1,119 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Rk techstore HOMEPAGE</title>
-	<meta name="description" content="rk tech stores offer a wide variety of technology at affordable prices, we ship worldwide">
-	<meta name="keywords" content="technology, tablets, iphone, samsung, android">
-	<link href="Styles/Body structure.css " type="text/css" rel = "stylesheet"/>
-	<link href="Styles/Banner and navigation.css " type="text/css" rel = "stylesheet"/>
-	<link href="Styles/Product category.css " type="text/css" rel = "stylesheet"/>
-	<link href="Styles/Sales and products.css " type="text/css" rel = "stylesheet"/>
+    <title>Rk techstore HOMEPAGE</title>
+    <meta name="description" content="rk tech stores offer a wide variety of technology at affordable prices, we ship worldwide">
+    <meta name="keywords" content="technology, tablets, iphone, samsung, android">
+    <meta name="author" content="Rk techstore">
+    <link rel="stylesheet" href="Styles/Styles.css">
+    <script src="Scripts/Scripts.js"></script>
 </head>
 <body>
 
-<header CLASS= "BANNERborder">
+<header class="BANNERborder" >
+    <div id="navbar">
+        
+        <a href="index.html" class="logo-link"> 
+            <img src="Images/my logo.png" alt="Ray's Tech Store Logo" class="nav-logo">
+        </a>
+        
+        <ul>
+             <li><a href="Index.html">Home</a></li>
+               <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+        </ul>
+    </div>
+    </header>
 
-<div id="navbar">
-<!--THE FOLLOWING LINKS WILL BE MADE FUNCTIONAL IN FUTURE UPDATES TO MY WEBSITE-->
-<ul>
-<li><a href = "OUR PRODUCTS.html">VIEW ALL PRODUCTS     |</a></li>
-<li><a href = "CART STATUS.html">VIEW CART |</a>   </li>
-<li><a href = "CONTACTUS.html">ABOUT US    |</a></li>
-<li><a href = "CONTACTUS.html">CHECKOUT    |</a></li>
-</ul>
+<div class="page-container" style="padding-top:50px;">
+    
+    <div id="slideshowContainer" >
+        <div class="slider" id="slider">
+            <div class="slide">
+                <img src="Images/tec-slide-1.jpg" alt="Latest Tech Products">
+            </div>
+            <div class="slide">
+                <img src="Images/tec-slide-2.jpg" alt="Special Offers">
+            </div>
+        <!--    <div class="slide">
+                <img src="https://via.placeholder.com/1200x400/ff9800/ffffff?text=Free+Shipping" alt="Free Shipping">
+            </div>-->
+        </div>
+        <button class="slider-btn prev">❮</button>
+        <button class="slider-btn next">❯</button>
+        <div class="slider-dots" id="sliderDots"></div>
+    </div>
 
-<!------------------------------------------------------------------------------>
+    <main class="content-grid-row">
+        
+        <div class="category-section">
+            <h1 id="productTXT" style="padding-top: 30px;padding-bottom: 30px;  color: #000000;">Our Products</h1>
+            <div id="category">
+                <div class="categoryimg" id="cable">
+                    <a href="#"> 
+                        <img src="Images/cable.jpg" class="thumbnail" alt="Cable category image">
+                    </a>
+                    <div class="caption"><strong>Cabling</strong></div>
+                </div>
+                <div class="categoryimg" id="display">
+                    <a href="#"> 
+                        <img src="Images/monitor for sale.jpg" class="thumbnail" alt="Screens and monitors category image">
+                    </a>
+                    <div class="caption"><strong>Monitors</strong></div>
+                </div>
+                <div class="categoryimg" id="pc hardware">
+                    <a href="#"> 
+                        <img src="Images/hardware.jpg" class="thumbnail" alt="Hardware category image">
+                    </a>
+                    <div class="caption"><strong>Hardware</strong></div>
+                </div>
+                <div class="categoryimg" id="headphone">
+                    <a href="#">
+                        <img src="Images/headphone.jpg" class="thumbnail" alt="Headphone category image">
+                    </a>
+                    <div class="caption"><strong>Headphones</strong></div>
+                </div>
+                <div class="categoryimg" id="phones">
+                    <a href="#"> 
+                        <img src="Images/phones.jpg" class="thumbnail" alt="Smartphones category image">
+                    </a>
+                    <div class="caption"><strong>Smartphones</strong></div>
+                </div>
+                <div class="categoryimg" id="tablets">
+                    <a href="#"> 
+                        <img src="Images/tablets.jpg" class="thumbnail" alt="Tablets category image">
+                    </a>
+                    <div class="caption"><strong>Tablets</strong></div>
+                </div>
+            </div>
+        </div>
 
+            <div id="featuredProducts">
+            <h1 id="latest">Featured Products</h1>
+    
+        <div id="featured-list-container">
+        </div>
+        </div>
+
+    </main>
+
+    <div class="offers-section" style="padding-top: 35px;padding-bottom: 95px;">
+        <h1 id="latest">Latest Offers</h1>
+        <div class="offers-scroll" id="offersScroll">
+            </div>
+        <div class="scroll-controls">
+            <button class="scroll-btn" id="scrollLeft">← Previous</button>
+            <button class="scroll-btn" id="scrollRight">Next →</button>
+        </div>
+    </div>
+    
+</div> <div class="cart-notification" id="cartNotification">
+    Product added to cart!
 </div>
-<img src = "Images/banner.png" alt="Company logo" height="70%%" width="100%"/>
-</header>
-
-<main>
-<!--
-<div id="container">
-slideshow of products we offer
-<div id = "slideshowContainer" >
-
-</div>
-</div>
--->
-
-
-<div id="category">
-<h1 id = "productTXT">Our Products</h1>
-
-
-<div class ="categoryimg" id = "cable">
-<a href="CABLING EQUIPMENT.html"> 
-<img src="Images/cable.jpg"  width="99%" height="99%" alt="Cable category image" class = "thumbnail imagefloat"  /></a>
-  <div class= "caption"><strong>Cabling</strong></div>
-  </div>
-
-<div class ="categoryimg" id = "display" ><a href="SCREENS AND DISPLAYS EQUIPMENT.html"> 
-  <img src = "Images/displays.jpg"  width="99%" height="99%" alt="Screens and monitors category image" class = "thumbnail"  /></a>
-  <div class= "caption"><strong>Monitors</strong></div>
-   </div>
-
-<div class ="categoryimg" id = "pc hardware"> <a href="COMPUTERS EQUIPMENT.html"> 
-<img src = "Images/hardware.jpg"  width="99%" height="99%" alt="Hardware category image" class = "thumbnail"/></a>
-     <div class= "caption"><strong>Hardware</strong></div>
-	</div>
-	
-<div class ="categoryimg" id = "headphone"> <a href="HEADPHONES EQUIPMENT.html">
- <img src = "Images/headphone.jpg"  width="99%" alt="Headphone category image" height="99%" class = "thumbnail"/></a>
-	<div class= "caption"><strong>Headphone's</strong></div>
-	</div>
-	
-<div class ="categoryimg" id = "phones"><a href="SMARTPHONES EQUIPMENT.html">  
-<img src ="Images/phones.jpg" width="99%" height="99%" alt="Smartphones category image" class = "thumbnail"/></a>
-    <div class="caption"><strong>Smartphone's</strong></div>
-	</div>
-	
-<div class ="categoryimg" id = "tablets"><a href="TABLETS EQUIPMENT.html"> 
-<img src = "Images/tablets.jpg"  width="99%" alt="Tablets category image" height="99%" class = "thumbnail"/></a>
-    <div class="caption"><strong>Tablet's</strong></div>
-	</div>
-
-</div>
-
-
-
-
-
-
-
-
-
-<div id="salesrightbar">
-<h1 id="latest">Latest offers</h1>
-
-
-<div class ="productcontainer">
-<figure>
-
-<img src = "Images/optical-fibre-cable-CST-3.png" height="50%" alt ="Optical fibre cable CST 3" width="30%" class = "imagefloat" />
-<span class="productdetails">Optical fibre cable CST 3 <br />
-<br />
-<strong class = "price"> R20/mtr </strong>
- </span>
-</figure>
-
-
- <button id ="buy">
- <img src = "Images/bought.png" height="10px" width="10px" />
- Add to cart
- </button> <button id="buy">
- <img src = "Images/bought.png" height="10px" width="10px" />
- Add to wishlist
- </button><br/> <a href ="opticalfibrecst3info.html" class="prdinfo">More info></a> 
-<br />
-<br />
-<br />
-<br />
-</div>
-
-
-
-<div class ="productcontainer">
-<br />
-<figure>
-<img src = "Images/monitor for sale.jpg" height="50%"alt="BenQ EX3501R monitor" width="30%" class = "imagefloat" />
-<span class="productdetails">  BenQ EX3501R monitor </span> <br />
-<span class="productdetails">
-<strike class = "oldprice">R14 000 </strike><br />
-<strong class = "price"> R10 999(SALE!) </strong> </span>
-<br />
-</figure>
- <button id="buy">
- <img src = "Images/bought.png" height="10px" width="10px" />
- Add to cart
- </button> <button id="buy">
- <img src = "Images/bought.png" height="10px" width="10px" />
- Add to wishlist
- </button><br /> <a href ="opticalfibrecst3info.html" class="prdinfo">More info></a> 
-<br />
-<br />
-<br />
-<br />
-</div>
-
-<div class ="productcontainer">
-<figure>
-<img src = "Images/samsung t5 portable ssd.jpg" height="50%" alt="Samsung T5 portable SSD" width="30%" class = "imagefloat" />
-<span class="productdetails">Samsung T5 portable SSD</span> <br />
-<br />
-<span class="productdetails"><strong class = "price"> R3 000 </strong> </span>
-
-</figure>
- <button id="buy">
- <img src = "Images/bought.png" height="10px" width="10px" />
- Add to cart
- </button>
- <button id="buy">
- <img src = "Images/bought.png" height="10px" width="10px" />
- Add to wishlist
- </button> 
- <br /> <a href ="opticalfibrecst3info.html" class = "prdinfo">More info></a> 
-<br />
-<br />
-<br />
-<br />
-<br />
-</div>
-
-<!--
-<figure>
-<img src = "Images/sony mdr zx110.jpg" height="100px" width="100px" class = "imagefloat" />
-<span class="productdetails">sony mdr zx110 </span> <br />
-<br />
-<span class="productdetails"><strong class = price> R700 </strong> </span>
-<br />
-<br />
-</figure>
- <button id="buy">
- <img src = "Images/bought.png" height="10px" width="10px" />
- Add to cart
- </button>
--->
-
-</main>
-
-
+<footer class="footer">
+    <p>&copy; 2025 Rays techstore. All rights reserved.</p>
 
 </body>
-
-
 </html>
